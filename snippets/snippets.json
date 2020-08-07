@@ -656,6 +656,21 @@
     "description": "The loop() function does precisely what its name suggests, and loops consecutively, allowing your program to change and respond.",
     "prefix": "loop"
   },
+  "Attiny13a": {
+    "prefix": "attiny13a",
+    "body": [
+      "/*                 PINOUTS: 1-PORTB,5 (/RESET)",
+      "*            ATTINY13       2-PORTB,3",
+      "*           .-------.       3-PORTB,4",
+      "*         --|1  A  8|--(+)  4-GROUND",
+      "*         --|2  T  7|--     5-PORTB,0",
+      "*         --|3  N  6|--     6-PORTB,1",
+      "*      (-)--|4  Y  5|--     7-PORTB,2",
+      "*           '-------'       8-Vcc",
+      "*/"
+    ],
+    "description": "Attiny13a"
+  }
   // -------------------------------------------- TEMPORaRIOs ---------------------------------------------------------------
 
   "sizeof": {
