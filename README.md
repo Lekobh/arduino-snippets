@@ -13,7 +13,7 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 ### Snippets
 
 
-| Snippet              | Purpose                                        |
+| Snippet              | Purpose                 
 | -------------------- | ------------------------------| ------------------------------|
 | Digital I/O   |
 | `digitalRead`        | [digitalRead()](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalread/)               |
