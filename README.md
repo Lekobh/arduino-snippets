@@ -12,8 +12,21 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 
 ### Snippets
 
-| Snippet              | Purpose                       |
-| -------------------- | ------------------------------|
+
+| Snippet              | Purpose                  | Comand                        |
+| -------------------- | ------------------------------| ------------------------------|
+| Digital I/O   |
+| `digitalRead`        | [digitalRead](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalread/)               |
+| `digitalWrite`       | [digitalWrite](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/)              |
+| `digitalWriteS`       | [dWrite](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/)              |digitalWrite(pin, HIGH/LOW)
+| `digitalWriteHIGH`       | [dWHigh](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/)              |digitalWrite(pin, HIGH)
+| `digitalWriteLOW`       | [dWLow](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/)              |digitalWrite(pin, LOW)
+| `pinMode`            | [pinMode](https://www.arduino.cc/reference/en/language/functions/digital-io/pinmode/)                   |
+| `pinModeOUTPUT`      | [pMOutput](https://www.arduino.cc/reference/en/language/functions/digital-io/pinmode/)                   |pinMode(pin, OUTPUT);|
+| `pinModeOUTPUTHIGH`      | [pMOHigh](https://www.arduino.cc/reference/en/language/functions/digital-io/pinmode/)                   |pinMode(pin, OUTPUT); digitalWrite(pin, HIGH);|
+| `pinModeOUTPUTLOW`      | [pMOLow](https://www.arduino.cc/reference/en/language/functions/digital-io/pinmode/)                   |pinMode(pin, OUTPUT); digitalWrite(pin, LOW);|
+| `pinModeINPUT`      | [pMInput](https://www.arduino.cc/reference/en/language/functions/digital-io/pinmode/)                   |pinMode(pin, INPUT);|
+| `pinModeINPUTPULLUP`      | [pMIPull](https://www.arduino.cc/reference/en/language/functions/digital-io/pinmode/)                   |pinMode(pin, INPUT_PULLUP);|
 | Advanced I/O   |
 | `noTone`             | [noTone()](https://www.arduino.cc/reference/en/language/functions/advanced-io/notone/)                  |
 | `pulseIn`            | [pulseIn()](https://www.arduino.cc/reference/en/language/functions/advanced-io/pulsein/)                 |
@@ -76,10 +89,6 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 | `elif`               | [Macro elif]( )                |
 | `sizeof`             | [sizeof()](https://www.arduino.cc/reference/en/language/variables/utilities/sizeof/)                  |
 | `undef`              | [Macro undef]( )               |
-| Digital I/O   |
-| `digitalRead`        | [digitalRead](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalread/)               |
-| `digitalWrite`       | [digitalWrite](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/)              |
-| `pinMode`            | [pinMode](https://www.arduino.cc/reference/en/language/functions/digital-io/pinmode/)                   |
 | External Interrupts   |
 | `attachInterrupt`    | [attachInterrupt()](https://www.arduino.cc/reference/en/language/functions/external-interrupts/attachinterrupt/)         |
 | `detachInterrupt`    | [detachInterrupt()](https://www.arduino.cc/reference/en/language/functions/external-interrupts/detachinterrupt/)         |

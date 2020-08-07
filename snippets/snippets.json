@@ -21,7 +21,7 @@
     "prefix": "digitalWrite"
   },
   "digitalWrite_SIMPLE": {
-    "body": "digitalWrite(${1:pin}, ${2:value});$0",
+    "body": "digitalWrite(${1:pin}, ${2|HIGH,LOW|});$0",
     "description": "Write a HIGH or a LOW value to a digital pin.",
     "prefix": "dWrite"
   },
@@ -33,7 +33,7 @@
   "digitalWrite_LOW_SIMPLE": {
     "body": "digitalWrite(${1:pin}, LOW);$0",
     "description": "Write a LOW value to a digital pin.",
-    "prefix": "dWLOW"
+    "prefix": "dWLow"
   },
   "pinMode": {
     "body": "pinMode(${1:pin}, ${2:mode});$0",
@@ -636,7 +636,11 @@
 		" * Created by ${3:Yours Name} on $CURRENT_MONTH_NAME - $CURRENT_YEAR",
 		" * Revision ${4:01} ",
 		" * $TM_FILEPATH ",
-		" */",
+		" *",
+    " * Copyright (c) $CURRENT_YEAR - $3.",
+    " * This file is part of  $1, licensed under the terms of",
+    " * the ${5|MIT,GPL 2.0,GPLv3,LGPL|} license. See file LICENSE for details.",
+    " */",
 		""
 	  ],
 	  "description": "HEADER"
@@ -671,6 +675,31 @@
     ],
     "description": "Attiny13a"
   }
+  "HEADER_ATTINY13a": {
+		"prefix": "headAttiny",
+		"body": [
+		  "/*",
+		  " * ${1:Project Name}  - ${2:An introduction}",
+		  " * Created by ${3:Yours Name} on $CURRENT_MONTH_NAME - $CURRENT_YEAR",
+		  " * Revision ${4:01} ",
+      " * $TM_FILEPATH ",
+      " *                 PINOUTS:  1-PORTB,5 (/RESET)",
+      " *           ATTINY13A       2-PORTB,3",
+      " *           .-------.       3-PORTB,4",
+      " *         --|1  A  8|--(+)  4-GROUND",
+      " *         --|2  T  7|--     5-PORTB,0",
+      " *         --|3  N  6|--     6-PORTB,1",
+      " *      (-)--|4  Y  5|--     7-PORTB,2",
+      " *           '-------'       8-Vcc",
+      " *",
+      " * Copyright (c) $CURRENT_YEAR - $3.",
+      " * This file is part of  $1, licensed under the terms of",
+      " * the ${5|MIT,GPL 2.0,GPLv3,LGPL|} license. See file LICENSE for details.",
+      " */",
+		  ""
+		],
+		"description": "HeaderAttiny"
+	}
   // -------------------------------------------- TEMPORaRIOs ---------------------------------------------------------------
 
   "sizeof": {
